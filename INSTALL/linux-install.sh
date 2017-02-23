@@ -1,9 +1,12 @@
-apt install zsh
+yum install zsh
 
 chsh -s $(which zsh)
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
+
+git clone https://github.com/powerline/fonts.git
+. ./fonts/install.sh
 
 # CentOS rcm install
 cd /etc/yum.repos.d/
