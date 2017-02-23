@@ -1,5 +1,5 @@
 # Evie's dotfiles
-**keywords** _mac_, _zsh_, *oh_my_zsh*, *brew.sh*
+**keywords** _`mac`_, _`zsh`_, *`oh_my_zsh`*, *`brew.sh`*
 
 This is a companion repo to [thoughtbot/dotfiles][1] including an install script for oh-my-zsh and for thoughtbot's dotfiles, and some useful brew installs.
 
@@ -14,10 +14,12 @@ This is a companion repo to [thoughtbot/dotfiles][1] including an install script
   + sets default shell to `zsh`
   + installs `oh-my-zsh`
   + installs brew if not present
-  + install `rcrc`(for `thoughtbot/dotfiles`)
+  + clones Github repo [`thoughtbot/dotfiles`][1] into `~/dotfiles`
+  + install `rcrc` (for `thoughtbot/dotfiles`)
   + set `RCRC` env and runs `rcup` (for `thoughtbot/dotfiles` aswell as the linking of these local dotfiles)
 
   + optionally run default brew installs by uncommenting the two lines in the script (to see the default installs checkout the `brew.sh` script, I've found the list somewhere a long while back and didn't save the resource)
 
+- (only for **hyperapp**) navigate to `dotfiles-local/hyper_plugins` and run `npm install`
 
 [1]:https://github.com/thoughtbot/dotfiles

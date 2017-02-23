@@ -1,6 +1,7 @@
 chsh -s $(which zsh)
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
 
 . ./brew-install.sh
 # . ./brew.sh
@@ -8,4 +9,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 brew tap thoughtbot/formulae
 brew install rcm
 
-env RCRC=$HOME/dotfiles/rcrc rcup
+env RCRC=$HOME/dotfiles-local/rcrc rcup
